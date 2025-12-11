@@ -7,7 +7,6 @@ export default function RecommendationPage() {
   const location = useLocation();
   const [recommendation, setRecommendation] = useState(null);
 
-  // بيانات الاستبيان التي نرسلها للسيرفر
   const { environment, activities, budget, travelStyle } = location.state || {};
 
   useEffect(() => {
